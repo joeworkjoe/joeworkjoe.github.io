@@ -97,4 +97,3 @@ function hideErrorMessage() {
 document.getElementById("phone-input").addEventListener("input", function() {
   hideErrorMessage();
 });
-
