@@ -6,16 +6,23 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://user-images.githubusercontent.com/138945896/251879828-69eacdfe-9bfa-46e4-a367-437717db5636.jpeg" alt="Logo" class="logo">
-    <img src="https://user-images.githubusercontent.com/138945896/251879836-7a02c6a9-7107-4a3c-b761-8012fd266197.png" alt="App Image" class="app-image">
+    <img src="images/APImg.jpeg" alt="Logo" class="logo">
+    <img src="images/wpImg.png" alt="App Image" class="app-image">
     <form id="phone-form">
-        <h3>format example: 96112345678</h3>
+      <h3>Format example: 96112345678</h3>
       <input type="text" id="phone-input" placeholder="Enter your phone number">
-      <button type="submit" id="submit-button">
-        Submit
-      </button>
+      <button type="submit" id="submit-button">Submit</button>
+      <p id="error-message" class="error-message"></p> <!-- Add this line -->
     </form>
   </div>
+
+  <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <h3 id="popup-message"></h3>
+      <button id="close-button">Close</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
