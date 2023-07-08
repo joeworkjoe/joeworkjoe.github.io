@@ -1,95 +1,96 @@
 body {
-    background: linear-gradient(to bottom, #25D366, #128C7E);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
-  
+  background: linear-gradient(to bottom, #25D366, #128C7E);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.app-image {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#phone-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#submit-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #128C7E;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#submit-button:hover {
+  background: #0C6B5D;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  /* Styles for small devices (landscape phones and small tablets) */
   .container {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 90%;
-    width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
   }
-  
+
   .logo {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 20px;
+    width: 180px;
   }
-  
-  .app-image {
-    width: 30px;
-    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  .container {
+    max-width: 600px;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+
+  .logo {
+    width: 200px;
   }
-  
-  #phone-input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  /* Styles for desktops */
+  .container {
+    max-width: 800px;
   }
-  
-  #submit-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #128C7E;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s ease;
+
+  .logo {
+    width: 250px;
   }
-  
-  #submit-button:hover {
-    background: #0C6B5D;
-  }
-  
-  /* Media Queries */
-  @media (min-width: 768px) {
-    /* Styles for tablets and larger screens */
-    .container {
-      max-width: 500px;
-    }
-  
-    .logo {
-      max-width: 250px;
-    }
-  
-    #phone-input {
-      padding: 12px;
-    }
-  
-    #submit-button {
-      padding: 12px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    /* Styles for desktops */
-    .container {
-      max-width: 800px;
-    }
-  
-    .logo {
-      max-width: 300px;
-    }
-  }
-  
+}
+
