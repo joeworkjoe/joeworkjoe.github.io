@@ -1,11 +1,9 @@
 document.getElementById('phone-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the form from submitting and refreshing the page
+    event.preventDefault();  
     
     // Get the phone number from the input field
     var phoneNumber = document.getElementById('phone-input').value;
-    identifier: phoneNumber;
-    // Make an HTTP request here using the phoneNumber variable
-    // Example code to make an HTTP request using Fetch API:
+    identifier: phoneNumber; 
     fetch('https://aidademo.apliclouds.com/AIDA_API/API/assistant/addScheduled?identifier=' , {
         method: 'POST',
         headers: {
