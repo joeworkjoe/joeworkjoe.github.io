@@ -18,6 +18,7 @@ body {
   align-items: center;
   max-width: 400px;
   width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -53,17 +54,31 @@ form {
   background: #128C7E;
   color: #fff;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#submit-button:hover {
+  background: #0C6B5D;
 }
 
 /* Media Queries */
 @media (min-width: 768px) {
   /* Styles for laptops */
   .container {
-    max-width: 600px;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 
   .logo {
     width: 150px;
+  }
+
+  #phone-input {
+    padding: 12px;
+  }
+
+  #submit-button {
+    padding: 12px;
   }
 }
 
@@ -71,6 +86,7 @@ form {
   /* Styles for desktops */
   .container {
     max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
 
   .logo {
@@ -78,4 +94,3 @@ form {
   }
 }
 
-  
