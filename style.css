@@ -55,4 +55,27 @@ form {
   cursor: pointer;
 }
 
+/* Media Queries */
+@media (min-width: 768px) {
+  /* Styles for laptops */
+  .container {
+    max-width: 600px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Styles for desktops */
+  .container {
+    max-width: 800px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
   
